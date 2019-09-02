@@ -4,7 +4,6 @@ import { Provider } from '@tarojs/mobx'
 import Home from './pages/home/home'
 
 import counterStore from './store/counter'
-
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -21,7 +20,8 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/home/home'
+      'pages/home/home',
+      'pages/home/test',
     ],
     window: {
       backgroundTextStyle: 'light',
