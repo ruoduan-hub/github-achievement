@@ -1,19 +1,21 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Button, Text } from '@tarojs/components'
 
-
+import './test.scss'
 
 class Test extends Component {
     constructor() {
         super(...arguments);
         this.state = { 
-            testText: '123123',
+            testText: 'prop传参：',
          };
     }
     render() {
         return (
-            <View>
+            <View className='test' >
                 <Text>{this.state.testText}</Text>
+                <Text>name:{this.$router.params.name}</Text>
+                <Text>id：{this.$router.params.id}</Text>
             </View>
         );
     }
